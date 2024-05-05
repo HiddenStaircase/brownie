@@ -13,3 +13,25 @@
 1. I also want to read and work on D&D right?
 1. I want to learn Python and Terraform
 
+https://cloud.google.com/ruby/docs/reference/google-cloud-bigquery/latest
+
+
+If I don't get the job I still want to work with Ruby/Rails. When setting up a developer environment make use of defaults.
+Should you check in your ENV files? Postgres has a default, but search doesn't. They are all at localhost:xxxx. Use path-based routing.
+
+/search
+/data
+/business
+/toggles
+
+Interview preparation:
+- Ruby on Rails specifics (bundler, logging, module resolution)
+- Study Ruby language specifics like splat operator
+- Study graphing code problems
+- Study system design...
+
+
+https://www.geeksforgeeks.org/topological-sorting/. Required sequence to take a desired class from a graph model of available courses.
+
+
+
