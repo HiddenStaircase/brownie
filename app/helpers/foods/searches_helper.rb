@@ -1,0 +1,2 @@
+module Foods::SearchesHelper
+end

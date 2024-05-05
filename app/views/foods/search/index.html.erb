@@ -1,0 +1,16 @@
+<section>
+
+  <ul>
+  <% @food_search.foods.each do |food| %>
+    <li><%= food %></li>
+  <% end %>
+  </ul>
+
+  <form>
+    <label>
+      <input required name="search_term" type="text" value="<%= @food_search.search_term %>" >
+    </label>
+
+    <button name="search_btn">Search</button>
+  </form>
+</section>
