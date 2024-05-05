@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :members, only: [:index, :create]
+
   namespace :foods do
     resources :search, only: [:index]
   end
