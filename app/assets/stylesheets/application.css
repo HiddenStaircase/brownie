@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+form:invalid input {
+  background-color: rgba(255, 55, 55, 0.1);
+}

@@ -5,24 +5,15 @@
 1. Create BigQuery table or some other data source that ingests from Cloud Storage,
 1. We're using BigQuery because it has on-demand pricing and we aren't doing much querying.
 
-
-
 ## Where to start...
-1. I want to hook up terraform and a CI system,
-1. I want to create a materialized view of my list of ingredients and track the ingredients parsing query,
-1. I also want to read and work on D&D right?
-1. I want to learn Python and Terraform
+1. Created GET /foods/search route as a resource so that we can have cohesion between the model and the view. (For example, having a search action under the foods reource requires a completely different model.)
+1. System test
+1. Validation errors
+1. Use Capybara
+1. Create View Components?
 
 https://cloud.google.com/ruby/docs/reference/google-cloud-bigquery/latest
 
-
-If I don't get the job I still want to work with Ruby/Rails. When setting up a developer environment make use of defaults.
-Should you check in your ENV files? Postgres has a default, but search doesn't. They are all at localhost:xxxx. Use path-based routing.
-
-/search
-/data
-/business
-/toggles
 
 Interview preparation:
 - Ruby on Rails specifics (bundler, logging, module resolution)
