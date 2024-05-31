@@ -1,5 +1,5 @@
 <section>
-  <%= @member.family_name %>, <%= @member.given_name %>
+  <%= @family.name %>
 
   <form action="/members" method="post">
     <label>
@@ -10,7 +10,7 @@
     </label>
     <input type="hidden" name="family_id" value="<%= @family.id %>" />
     <button name="create">
-      Add Another Member
+      Add Family Member
     </button>
   </form>
 </section>

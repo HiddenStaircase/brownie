@@ -1,0 +1,9 @@
+<section>
+  <ul>
+  <% @families.each do |family| %>
+    <li>
+      <a href="./family/<%= family.id %>"><%= family.name %></a>
+    </li>
+  <% end %>
+  </ul>
+</section>

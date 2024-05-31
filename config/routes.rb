@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :family, only: [:index, :show]
   resources :members, only: [:index, :create]
 
   namespace :foods do
