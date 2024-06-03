@@ -4,7 +4,7 @@ class FamilyController < ApplicationController
   end
 
   def show
-    @family = Family.find(family_params)
+    @family = Family.includes(:members).find(family_params)
 
     # Include members?
   end

@@ -2,6 +2,13 @@
   <ul>
   <% @members.each do |member| %>
     <li><%= member.family_name %>, <%= member.given_name %></li>
+    <%= form_with(url: "./member", method: "delete") do |form| %>
+        <label>
+            <button>
+                <%= member.family_name %>, <%= member.given_name %> 🗑️
+            </button>
+        </label>
+    <% end %>
   <% end %>
   <ul>
 </section>

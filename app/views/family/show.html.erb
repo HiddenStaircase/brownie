@@ -1,12 +1,25 @@
 <section>
   <%= @family.name %>
 
+  <ul>
+    <% @family.members.each do |member| %>
+      <%= form_with(url: "/members/#{member.id}", method: "delete") do |form| %>
+          <label>
+              <%= member.family_name %>, <%= member.given_name %>
+              <button>
+                  🗑️
+              </button>
+          </label>
+      <% end %>
+    <% end %>
+<ul>
+
   <form action="/members" method="post">
     <label>
-      <input type="text" name="given_name" />
+      <input required type="text" name="given_name" />
     </label>
     <label>
-      <input type="text" name="family_name" />
+      <input required type="text" name="family_name" />
     </label>
     <input type="hidden" name="family_id" value="<%= @family.id %>" />
     <button name="create">

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :family, only: [:index, :show]
-  resources :members, only: [:index, :create]
+  resources :members, only: [:index, :create, :destroy]
 
   namespace :foods do
     resources :search, only: [:index]
